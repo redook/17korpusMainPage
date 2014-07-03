@@ -72,26 +72,15 @@
 			
 			<h1 id="ekipa">Ekipa</h1>
 			<br />
-			<ul>
-			  <li>Ev&#239;l - Ev&#239;l, <a class="fancybox" rel="galleryEvil" href="ekipa/lisis.png" title="Lisis - Sage"><strike>Lisis</strike></a></li>
-			  <li>Gosza</li>
-			  <li>Jerzu</li>
-			  <li>Keala - <a class="fancybox" rel="galleryKeala" href="ekipa/keala.jpg" title="Keala - Sentinel">Keala</a></li>
-			  <li>Luksio</li>
-			  <li>Tom - <a class="fancybox" rel="galleryTom" href="ekipa/nillein.jpg" title="Nillein - Guardian">Nillein</a>, 
-				    <a class="fancybox" rel="galleryTom" href="ekipa/zarira.jpg" title="Zarira - Sage">Zarira</a></li>
-			  <li>Storm</li>
-			</ul>
-			<br />
 			<div id="ekipaDiv">
 			</div>
 			
 		</div>
 
 		<!-- The JavaScript -->
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
-		<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
         <script type="text/javascript">
 			(function($) {
@@ -398,9 +387,9 @@
 						if(this.hasOwnProperty("characters")) {
 							$.each(person.characters, function(){
 								if(this.hasOwnProperty("img")) {
-									var imageLink = $("<a>", {"href":this.img, "class":"fancybox", "rel":"gallery"+person.name, "title":this.name}).html(this.name);
+									var imageLink = $("<a>", {"href":this.img, "class":"fancybox", "rel":"gallery"+person.name.replace(" ", ""), "title":this.name}).html(this.name);
 									personListElement.append(imageLink);
-									imageLink.fancybox(fancyboxProperites);
+									//imageLink.fancybox();
 								} else {
 									personListElement.append(this.name);
 								}
@@ -410,6 +399,7 @@
 					list.append(personListElement);
 				});
 				$("#ekipaDiv").append(list);
+				$(".fancybox").fancybox();
 				});
 			});
 
