@@ -1,15 +1,35 @@
 { "people" : [
 	{	
-		"name": "Evil",
+		"name": "Astahlyn",
 		"characters" : [
-			{ "name" : "Evil"},
-			{ "name" : "Lisis", "img" : "ekipa/lisis.png"}
+			{ "name" : "Astahlyn", "img" : "ekipa/astahlyn.jpg" }
+		]
+	},
+	{	
+		"name": "Dooku",
+		"characters" : [
+			{ "name" : "Vallgaav", "img" : "ekipa/vallgaav.jpg" },
+			{ "name" : "Ven'zon", "img" : "ekipa/venzon.jpg" }
+		]
+    },
+	{	
+		"name": "Drauger",
+		"characters" : [
+			{ "name" : "Drauger", "img" : "ekipa/drauger.jpg" }
 		]
     },
     {	
-		"name": "Drauger",
+		"name": "Dydynski",
 		"characters" : [
-			{ "name" : "Drauger" }
+			{ "name" : "Dydynski", "img" : "ekipa/dydynski.jpg" },
+			{ "name" : "Bilewiczowna", "img" : "ekipa/bilewiczowna.jpg" }
+		]
+    },
+	{	
+		"name": "Evil",
+		"characters" : [
+			{ "name" : "Ev&#239;l", "img" : "ekipa/evil.png"},
+			{ "name" : "Lisis", "img" : "ekipa/lisis.png"}
 		]
     },
     {	
@@ -28,7 +48,17 @@
 	{	
 		"name": "Keala",
 		"characters" : [
-			{ "name" : "Keala", "img":"ekipa/keala.jpg"}
+			{ "name" : "Keala", "img":"ekipa/keala.jpg"},
+			{ "name" : "Nizuria", "img":"ekipa/nizuria.jpg"}
+		]
+    },
+	{	
+		"name": "Landryn'ek",
+		"characters" : [
+			{ "name" : "Landryn'ka", "img":"ekipa/landrynka.jpg"},
+			{ "name" : "Pirx", "img":"ekipa/Pirx.jpg"},
+			{ "name" : "Parszywek", "img":"ekipa/Parszywek.jpg"},
+			{ "name" : "Wycisk", "img":"ekipa/Wycisk.jpg"}
 		]
     },
 	{	
@@ -40,20 +70,26 @@
 	{	
 		"name": "Luksio",
 		"characters" : [
-			{ "name" : "Luksio" }
+			{ "name" : "Luksio", "img":"ekipa/Luksio.jpg"},
+			{ "name" : "Luksioo", "img":"ekipa/Luksioo.jpg"},
+			{ "name" : "Old&#39;fox", "img":"ekipa/Oldfox.jpg"}
 		]
     },
 	{	
 		"name": "Storm",
 		"characters" : [
-			{ "name" : "Stormberry" }
+			{ "name" : "Stormberry", "img":"ekipa/Stormberry.jpg"}
 		]
     },
 	{ 
 		"name": "Tom Khaar",
 		"characters" : [
 			{ "name" : "Nillein", "img":"ekipa/nillein.jpg"},
-			{ "name" : "Zarira", "img":"ekipa/zarira.jpg"}
+			{ "name" : "Thomm", "img":"ekipa/thomm.jpg"},
+			{ "name" : "Zarira", "img":"ekipa/zarira.jpg"},
+			{ "name" : "Alyonna", "img":"ekipa/alyonna.jpg"},
+			{ "name" : "Zey'eth'or", "img":"ekipa/zeyethor.jpg"},
+			{ "name" : "Kevea", "img":"ekipa/kevea.jpg"}
 		]
     }
 ]
