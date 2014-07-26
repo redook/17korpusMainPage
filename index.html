@@ -380,26 +380,34 @@
 					'speedOut'		:	200, 
 					'overlayShow'	:	false
 				};
-				$.getJSON("ekipa/people.txt", function (json) {
+				$.getJSON("forum/characters_list.php", function (json) {
 				    var list = $("<ul>");
 				    $.each(json.people, function (i, person) {
 						var personListElement = $("<li>").html(person.name+" - ");
 						if(this.hasOwnProperty("characters")) {
+							var firstOne = true;
 							$.each(person.characters, function(){
+								if(firstOne)
+									firstOne = false;
+								else
+									personListElement.append(", ");
+								
 								if(this.hasOwnProperty("img")) {
-									var imageLink = $("<a>", {"href":this.img, "class":"fancybox", "rel":"gallery"+person.name.replace(" ", ""), "title":this.name}).html(this.name);
+									var imageLink = $("<a>", {"href":"forum/download/character_image.php?character_id="+this.id, "class":"fancybox", "rel":"gallery"+person.name.replace(" ", ""), "title":this.name}).html(this.name);
 									personListElement.append(imageLink);
-									//imageLink.fancybox();
 								} else {
 									personListElement.append(this.name);
 								}
-								personListElement.append(" ");
+								//personListElement.append(" ");
 							});
 						}
-					list.append(personListElement);
-				});
-				$("#ekipaDiv").append(list);
-				$(".fancybox").fancybox();
+						
+						list.append(personListElement);
+					});
+					$("#ekipaDiv").append(list);
+					$(".fancybox").fancybox({
+						"type": "image"
+					});
 				});
 			});
 
